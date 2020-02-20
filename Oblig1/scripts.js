@@ -43,6 +43,14 @@ function addBestilling() {
     var epost = document.createTextNode(epost);
     data6.appendChild(epost);
     document.getElementById("bestilling").appendChild(data6);
+
+    
+    document.getElementById('film').value=null;
+    document.getElementById('antall').value=null;
+    document.getElementById('fornavn').value=null;
+    document.getElementById('etternavn').value=null;
+    document.getElementById('tlf').value=null;
+    document.getElementById('epost').value=null;
   }
 
 function deleteTable() {
