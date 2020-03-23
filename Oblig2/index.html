@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+<style>
+    #tableInfo {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: 50%;
+    }
+    #bestilling {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      table-layout: fixed;
+      width: 50%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+</style>
+<title>Webprogrammering oblig 1</title>
+</head>
+<body>
+<h1><b>Bestilling av kinobiletter</b></h1>
+
+  Velg Film:
+  <select id="film" name="film">
+      <option value="none" selected disabled hidden> 
+          Velg film her
+      </option> 
+      <option value="Avengers">Avengers</option>
+      <option value="Avengers: Age of Ultron">Avengers: Age of Ultron</option>
+      <option value="Avengers: Infinity War">Avengers: Infinity War</option>
+      <option value="Avengers: Ebdgane">Avengers: Endgame</option>
+  </select>
+    <br>
+    <br> 
+    <label for="antall">Antall</label> 
+    <input type="text" id="antall" name="antall" maxlength="2" size="2"><br>
+    <br>
+    <label for="fornavn">Fornavn &ensp;&ensp; </label>
+    <input type="text" id="fornavn" name="fornavn"><br>
+    <label for="etternavn">Etternavn &ensp;</label>
+    <input type="text" id="etternavn" name="etternavn"><br>
+    <label for="tlf">Telefonnr &ensp;</label>
+    <input type="text" id="tlf" name="tlf"><br>
+    <label for="epost">Epost &ensp;&ensp;&ensp;&ensp;</label>
+    <input type="text" id="epost" name="epost"><br>
+
+    <input type="submit" onclick="addBestilling();" value="Kjop Bilett">
+
+  <h2>Alle biletter</h2>
+  <table id="tableInfo">
+    <tr>
+    <th>Film</th>
+    <th>Antall</th>
+    <th>Fornavn</th>
+    <th>Etternavn</th>
+    <th>Telefonnr</th>
+    <th>Epost</th>
+  </tr>
+  </table>
+  <table id="bestilling">
+</table>
+<br>
+<button onclick="deleteTable()">Slett alle bilettene</button>
+  <script src="scripts.js"></script>
+</body>
+</html>
