@@ -1,0 +1,22 @@
+#bestillinger {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 500px;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px 60px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #button-delete {
+      width: 200px;
+      position: relative;
+      top: 30px;
+  }

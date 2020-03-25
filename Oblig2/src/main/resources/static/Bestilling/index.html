@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Bestill</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">Hjem</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/VisBestilling/index.html">Vis Bestillinger</a></li>
+                <li><a href="/Bestilling/index.html">Bestill Biletter</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Bestill Biletter</h3>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="film"> Velg Film:</label>
+                        <select class="form-control" id="film" name="film">
+                            <option value="none" selected disabled hidden> 
+                                Velg film her
+                            </option> 
+                            <option value="Avengers">Avengers</option>
+                            <option value="Avengers: Age of Ultron">Avengers: Age of Ultron</option>
+                            <option value="Avengers: Infinity War">Avengers: Infinity War</option>
+                            <option value="Avengers: Endgane">Avengers: Endgame</option>
+                        </select>
+                        <p id="requiredFilm"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="antall">Antall</label>
+                        <input type="number" class="form-control" id="antall" min="1" required>
+                        <p id="requiredAntall"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="fornavn">Fornavn</label>
+                        <input type="text" class="form-control" id="fornavn" required>
+                        <p id="requiredFornavn"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="etternavn">Etternavn</label>
+                        <input type="text" class="form-control" id="etternavn" required>
+                        <p id="requiredEtternavn"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon">Telefonnr</label>
+                        <input type="text" class="form-control" id="telefon" required>
+                        <p id="requiredTelefon"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="epost">Epost</label>
+                        <input type="text" class="form-control" id="epost" required>
+                        <p id="requiredEpost"></p>
+                    </div>
+                </form>
+                <button class="btn btn-primary" onclick="regBestilling()">Bestill Nå</button><br/>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

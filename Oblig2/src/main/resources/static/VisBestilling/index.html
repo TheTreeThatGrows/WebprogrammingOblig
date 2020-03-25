@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Kunder</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">Hjem</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/VisBestilling/index.html">Vis Bestillinger</a></li>
+                <li><a href="/Bestilling/index.html">Bestill Biletter</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <div class="col-md-8">
+                <h3>Alle Bestillinger:</h3>
+                <div id="bestillinger"></div>
+                <button id="button-delete" class="btn btn-danger" onclick="slettBestillingene()">Slett alle bestillinger</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
